@@ -27,13 +27,13 @@ gis = GIS("https://www.arcgis.com", AGOL_USERNAME, AGOL_PASSWORD)
 # =========================
 # FEATURE LAYER
 # =========================
-SURVEY_LAYER_URL = "https://services9.arcgis.com/yF9lC2Enj2rx9gHK/arcgis/rest/services/service_eec5deb1b491460281f8492dcd8a631a/FeatureServer/0"
+SURVEY_LAYER_URL = "https://services9.arcgis.com/yF9lC2Enj2rx9gHK/arcgis/rest/services/service_449b0e76969b491796d6599e9b4e914f/FeatureServer/0"
 layer = FeatureLayer(SURVEY_LAYER_URL, gis=gis)
 
 # =========================
 # TEMPLATE
 # =========================
-TEMPLATE_PATH = "CHEMICAL SAFETY Report.docx"
+TEMPLATE_PATH = "FUNERAL UNDERTAKER PREMISES REPORT.docx"
 
 if not os.path.exists(TEMPLATE_PATH):
     raise Exception(f"{TEMPLATE_PATH} not found in project root")
